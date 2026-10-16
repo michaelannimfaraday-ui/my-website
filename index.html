@@ -2,27 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta nameYes, absolutely! 
-
-Looking at your screenshot, the site currently looks plain because the CSS stylesheet isn't linking properly on GitHub Pages or isn't saved in the same directory[cite: 6].
-
-Let's fix the CSS link and add vibrant colors, modern typography, and image cards to turn this into a high-end portfolio!
-
----
-
-### Step 1: Update `index.html` (With Picture Cards)
-
-Open `index.html` in VS Code, replace everything inside with this code, and press **`Ctrl + S`** to save:
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Anim Faraday | Design & Web</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="[https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap](https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap)" rel="stylesheet">
+    <title>Michael Anim Faraday | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -37,7 +20,7 @@ Open `index.html` in VS Code, replace everything inside with this code, and pres
         </ul>
     </nav>
 
-    <!-- Hero Banner with Vibrant Background -->
+    <!-- Hero Banner with Gradient -->
     <header class="hero">
         <div class="hero-content">
             <h1>Creative Graphic Designer <br>& Web Developer</h1>
@@ -50,15 +33,15 @@ Open `index.html` in VS Code, replace everything inside with this code, and pres
         <!-- About Section -->
         <section id="about" class="section">
             <h2 class="section-title">About Me</h2>
-            <p class="section-desc">Welcome! I specialize in visual design, logo branding, digital photo retouching, and custom web applications. I focus on precision, vibrant color composition, and polished presentation.</p>
+            <p class="section-desc">Welcome! I specialize in visual design, logo branding, photo retouching, and custom web applications. I focus on precision, vibrant color composition, and visual impact.</p>
         </section>
 
-        <!-- What I Do / Services -->
+        <!-- What I Do / Services Grid -->
         <section id="services" class="section">
             <h2 class="section-title">What I Do</h2>
             <div class="services-grid">
                 <div class="card">
-                    <img src="[https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80](https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80)" alt="Graphic Design" class="card-img">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80" alt="Graphic Design" class="card-img">
                     <div class="card-body">
                         <h3>Graphic & Branding Design</h3>
                         <p>Custom logos, flyers, apparel graphics, and visual concepts tailored to stand out.</p>
@@ -66,7 +49,7 @@ Open `index.html` in VS Code, replace everything inside with this code, and pres
                 </div>
 
                 <div class="card">
-                    <img src="[https://images.unsplash.com/photo-1542744094-3a3121699493?auto=format&fit=crop&w=600&q=80](https://images.unsplash.com/photo-1542744094-3a3121699493?auto=format&fit=crop&w=600&q=80)" alt="Photo Retouching" class="card-img">
+                    <img src="https://images.unsplash.com/photo-1542744094-3a3121699493?auto=format&fit=crop&w=600&q=80" alt="Photo Retouching" class="card-img">
                     <div class="card-body">
                         <h3>Photo Retouching</h3>
                         <p>High-end image enhancement, background adjustments, skin smoothing, and detail restoration.</p>
@@ -74,7 +57,7 @@ Open `index.html` in VS Code, replace everything inside with this code, and pres
                 </div>
 
                 <div class="card">
-                    <img src="[https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80](https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80)" alt="Web Development" class="card-img">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Web Development" class="card-img">
                     <div class="card-body">
                         <h3>Custom Web Code</h3>
                         <p>Clean HTML, CSS, and JavaScript website development optimized for all devices.</p>
