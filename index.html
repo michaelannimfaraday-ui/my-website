@@ -2,53 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta nameYes, absolutely! 
+
+Looking at your screenshot, the site currently looks plain because the CSS stylesheet isn't linking properly on GitHub Pages or isn't saved in the same directory[cite: 6].
+
+Let's fix the CSS link and add vibrant colors, modern typography, and image cards to turn this into a high-end portfolio!
+
+---
+
+### Step 1: Update `index.html` (With Picture Cards)
+
+Open `index.html` in VS Code, replace everything inside with this code, and press **`Ctrl + S`** to save:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Anim Faraday | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Michael Anim Faraday | Design & Web</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="[https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap](https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap)" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Navigation Header -->
     <nav class="navbar">
         <div class="logo">Michael Anim Faraday</div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact" class="btn-nav">Contact</a></li>
+            <li><a href="#contact" class="btn-nav">Contact Me</a></li>
         </ul>
     </nav>
 
+    <!-- Hero Banner with Vibrant Background -->
     <header class="hero">
-        <h1>Creative Graphic Designer & Web Developer</h1>
-        <p>I design modern visuals, custom apparel graphics, logos, and high-impact digital experiences.</p>
-        <a href="#portfolio" class="btn-primary">View My Work</a>
+        <div class="hero-content">
+            <h1>Creative Graphic Designer <br>& Web Developer</h1>
+            <p>Crafting striking visual identities, custom apparel graphics, logos, and modern digital web experiences.</p>
+            <a href="#portfolio" class="btn-primary">View Portfolio</a>
+        </div>
     </header>
 
     <main class="container">
+        <!-- About Section -->
         <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>Welcome! I specialize in digital design, custom typography, image manipulation, and custom web experiences. Whether building modern web interfaces or crafting branding assets, I focus on precision and visual excellence.</p>
+            <h2 class="section-title">About Me</h2>
+            <p class="section-desc">Welcome! I specialize in visual design, logo branding, digital photo retouching, and custom web applications. I focus on precision, vibrant color composition, and polished presentation.</p>
         </section>
 
+        <!-- What I Do / Services -->
         <section id="services" class="section">
-            <h2>What I Do</h2>
+            <h2 class="section-title">What I Do</h2>
             <div class="services-grid">
                 <div class="card">
-                    <h3>Graphic & Logo Design</h3>
-                    <p>Custom branding, logos, flyers, and identity concepts tailored to your vision.</p>
+                    <img src="[https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80](https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80)" alt="Graphic Design" class="card-img">
+                    <div class="card-body">
+                        <h3>Graphic & Branding Design</h3>
+                        <p>Custom logos, flyers, apparel graphics, and visual concepts tailored to stand out.</p>
+                    </div>
                 </div>
+
                 <div class="card">
-                    <h3>Photo Retouching</h3>
-                    <p>High-quality image editing, background modifications, skin smoothing, and upscaling.</p>
+                    <img src="[https://images.unsplash.com/photo-1542744094-3a3121699493?auto=format&fit=crop&w=600&q=80](https://images.unsplash.com/photo-1542744094-3a3121699493?auto=format&fit=crop&w=600&q=80)" alt="Photo Retouching" class="card-img">
+                    <div class="card-body">
+                        <h3>Photo Retouching</h3>
+                        <p>High-end image enhancement, background adjustments, skin smoothing, and detail restoration.</p>
+                    </div>
                 </div>
+
                 <div class="card">
-                    <h3>Custom Web Code</h3>
-                    <p>Hand-crafted HTML, CSS, and JavaScript websites designed from the ground up.</p>
+                    <img src="[https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80](https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80)" alt="Web Development" class="card-img">
+                    <div class="card-body">
+                        <h3>Custom Web Code</h3>
+                        <p>Clean HTML, CSS, and JavaScript website development optimized for all devices.</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Michael Anim Faraday. All rights reserved.</p>
     </footer>
