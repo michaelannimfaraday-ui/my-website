@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Submission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="form-container">
+        <h1>Document Submission</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="name@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="doc-type">Document Type</label>
+                <select id="doc-type" name="doc_type" required>
+                    <option value="" disabled selected>Select a document type</option>
+                    <option value="application">Application Form</option>
+                    <option value="report">Project Report</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Details</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Provide any extra details here..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Document</button>
+        </form>
+    </main>
+</body>
+</html>
